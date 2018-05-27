@@ -1,0 +1,30 @@
+#made by hack3d_
+
+answers = []
+while True:
+    print('enter nothing at any time to break the loop')
+    number1 = input('enter first number')
+    if number1 == '':
+        break
+    number2 = input('enter second number')
+    if number2 == '':
+        break
+    choice = input('multiply add or subtract[1,2,3]')
+    c = 1
+    if choice == '1':
+        c = int(number1) * int(number2)
+        e = ' x '
+    if choice == '2':
+        c = int(number1) + int(number2)
+        e = ' + '
+    if choice == '3':
+        c = int(number1) - int(number2)
+        e = ' - '
+    if choice == '':
+        break
+    d = ' = '
+    print(number1 + e + number2 + d + str(c))
+    answers = answers + [str(c)]
+print('here are all your answers')
+for c in answers:
+    print('>>>> ' +str(c))
